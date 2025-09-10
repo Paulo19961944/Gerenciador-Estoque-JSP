@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #66BB6A;
+    color: #fff;
+    padding: 32px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2.title {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+section.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 32px;
+    margin: 32px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #66BB6A;
+    color: #fff;
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo para links de ação na tabela */
+table a {
+    color: #1a73e8;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para os botões e links de ação */
+.button,
+button[type="submit"] {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #66BB6A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover,
+button[type="submit"]:hover {
+    background-color: #4CAF50;
+}
+
+.button-remove {
+    background-color: #F44336;
+}
+
+.button-remove:hover {
+    background-color: #D32F2F;
+}
+
+section.produtos-add-remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+/* Estilos para formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+label {
+    font-weight: 500;
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo para a página de erro ou de não encontrado */
+.error-message {
+    text-align: center;
+    color: #777;
+    margin-top: 50px;
+}
